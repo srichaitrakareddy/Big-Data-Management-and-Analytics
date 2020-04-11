@@ -1,0 +1,26 @@
+README: 
+
+Step 1:
+Run Mongodb
+
+Step 2: 
+Change the dates in the config file of news-please. Also go to the sitelist file and append new links with recursive crawling heuristics
+
+Step 3:
+Run scraper.py using python <location>/scraper.py
+
+Step 4:
+Export the data from Mongo Db as JSON files and put in a folder
+
+Step 5:
+Download the spanish_ancora model of udpipe and update its location in ln 36 of run_udpipe.py
+Change the location folder to the folder of the JSON files in ln 48 of run_udpipe.py
+
+Step 6:
+Run run_udpipe.py using python <location>/run_udpipe.py
+
+Step 7:
+Run SigNCDImplementation.py using python <location>/SigNCDImplementation.py
+This will print the duplicate article headlines and the number of duplicate records.
+
+
